@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <div class="logoNnav">
+      <div class="hamburger-div">
+        <div class="hamburger"></div>
+      </div>
+      <img class="logo" src="./images/logo.svg" alt="sneakers logo">
+      <nav class="desktop-nav">
+        <ul>
+          <li>
+            Collections
+          </li>
+          <li>
+            Men
+          </li>
+          <li>
+            Women
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Contact
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="cart-iconNavatar">
+      <div class="main-cart">
+        <img class="main-cart-icon" src="./images/icon-cart.svg" alt="cart icon">
+        <div class="cart-notification"></div>
+      </div>
+      <img src="./images/image-avatar.png" alt="avatar">
+    </div>
+    </div>
+    <div class="items-in-cart hidden">
+      <p>Chart</p>
+      <div class="items-in-cart-body">
+        <!-- <div class="items-in-cart-body-main">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product thumbnail">
+          <div>
+            <p>Fall Limited Edition Sneakers</p>
+            <div>$125 x <span class="amount-dynamic">3</span> <span class="bold calculated-amount">$375</span></div>
+          </div>
+          <img class="delete-icon" src="./images/icon-delete.svg" alt="icon-delete">
+        </div>
+        <button type="button" class="checkout">Checkout</button>
+      </div> -->
+  </header>
+  <nav class="mobile-nav">
+    <ul>
+      <li><img src="./images/icon-close.svg" alt=""></li>
+      <li>
+        Collections
+      </li>
+      <li>
+        Men
+      </li>
+      <li>
+        Women
+      </li>
+      <li>
+        About
+      </li>
+      <li>
+        Contact
+      </li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+
+  <main class="body">
+    <section class="hero-images">
+      <article class="image-slider">
+        <div class="img-slides">
+          <img src="./images/image-product-1.jpg" alt="image-product-1">
+          <img src="./images/image-product-2.jpg" alt="image-product-2">
+          <img src="./images/image-product-3.jpg" alt="image-product-3">
+          <img src="./images/image-product-4.jpg" alt="image-product-4">
+          <div class="navigate-buttons">
+            <button class="previous-button"> <img class="previous-icon" src="./images/icon-previous.svg"
+                alt="icon-previous"></button>
+            <button class="next-button"> <img src="./images/icon-next.svg" alt="icon-next"></button>
+          </div>
+        </div>
+      </article>
+      <article class="thumbnail-container">
+        <p>
+          <img data-num="0" src="./images/image-product-1-thumbnail.jpg" alt="">
+        </p>
+        <p>
+          <img data-num="1" src="./images/image-product-2-thumbnail.jpg" alt="">
+        </p>
+        <p>
+          <img data-num="2" src="./images/image-product-3-thumbnail.jpg" alt="">
+        </p>
+        <p>
+          <img data-num="3" src="./images/image-product-4-thumbnail.jpg" alt="">
+        </p>
+      </article>
+    </section>
+    <section class="section-2">
+      <article>
+        <h1>
+          Sneaker Company
+        </h1>
+        <h2 class="bold">
+          Fall Limited Edition Sneakers
+        </h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="sales-div">
+          <div class="prices">
+            <span class="bold promo-price">
+              $125.00
+            </span>
+            <span class="promo">
+              50%
+            </span>
+            <span class="original-price">
+              $250.00
+            </span>
+          </div>
+          <div>
+            <div class="quantity">
+              <button><img src="./images/icon-minus.svg" alt="minus"></button>
+              <p class="quantity-amount">0</p>
+              <button> <img src="./images/icon-plus.svg" alt="plus"></button>
+            </div>
+            <button class="add-to-cart">
+              <p> <img src="./images/icon-cart.svg" alt="cart">Add to cart</p>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="controller.js"></script>
+  <script type="module" src="view.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
